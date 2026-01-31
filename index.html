@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Chess — Birthday Edition</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating balloons -->
+  <div class="balloon-container">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <!-- Title -->
+  <div class="title-banner">
+    <h1>Marvel Chess</h1>
+    <div class="subtitle">Birthday Party Edition</div>
+  </div>
+
+  <!-- Game area -->
+  <div class="game-wrapper">
+
+    <!-- Status -->
+    <div id="status" class="status-bar">Your turn</div>
+
+    <!-- Captured pieces: what you captured -->
+    <div class="captured-tray">
+      <div id="captured-white" class="captured-group">
+        <span class="side-label">Lost:</span>
+      </div>
+      <div id="captured-black" class="captured-group">
+        <span class="side-label">Won:</span>
+      </div>
+    </div>
+
+    <!-- Board -->
+    <div class="board-container">
+      <div id="chess-board" class="chess-board"></div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+      <button id="btn-new-game" class="btn btn-primary">New Game</button>
+    </div>
+  </div>
+
+  <!-- Promotion dialog -->
+  <div id="promo-overlay" class="promo-overlay">
+    <div class="promo-modal">
+      <h3>Promote pawn to:</h3>
+      <div id="promo-options" class="promo-options"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="js/Piece.js"></script>
+  <script src="js/Board.js"></script>
+  <script src="js/AI.js"></script>
+  <script src="js/Game.js"></script>
+
+</body>
+</html>
