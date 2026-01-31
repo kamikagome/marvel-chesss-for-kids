@@ -89,6 +89,8 @@ The codebase follows a clean separation of concerns across four modules:
 - **`AI.js`** — Exposes a single function that picks a random legal move from the chess engine
 - **`Game.js`** — IIFE that wires everything together: initializes the chess engine, handles click events, manages turn flow (human then AI), tracks captures, and updates the UI
 
+Created with Claude Code 
+
 ## License
 
 MIT

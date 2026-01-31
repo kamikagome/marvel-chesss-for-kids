@@ -160,7 +160,8 @@
     highlightSquare(squareMap, result.from, 'last-move');
     highlightSquare(squareMap, result.to, 'last-move');
 
-    deselect();
+    selectedSquare = null;
+    validMoves = [];
     renderPieces();
     renderCaptured();
     updateStatus();

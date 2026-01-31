@@ -303,10 +303,3 @@ function createPromoOptionElement(type, color) {
 
   return el;
 }
-
-/**
- * Get Marvel character name for a piece type.
- */
-function getPieceName(type) {
-  return MARVEL_MAP[type]?.name ?? type;
-}
